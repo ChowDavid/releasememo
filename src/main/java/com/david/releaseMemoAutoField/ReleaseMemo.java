@@ -46,7 +46,7 @@ public class ReleaseMemo {
 		this.file=file;
 		this.skipsvn=skipsvn;
 		lines=FileUtils.readLines(file);
-		errorMessage=new ArrayList<>();
+		errorMessage=new ArrayList<String>();
 		targetFolder=new File(get(ReleaseMemoField.PROJECT_NAME).toUpperCase()+"_"+sdf.format(new Date()));
 		zipFile=new File(get(ReleaseMemoField.PROJECT_NAME).toUpperCase()+"_"+sdf.format(new Date())+".zip");
 		targetFile=new File(targetFolder.getAbsolutePath()+File.separatorChar+"release memo v2_"+get(ReleaseMemoField.PROJECT_NAME)+"_"+sdf.format(new Date())+".xls");
@@ -182,7 +182,7 @@ public class ReleaseMemo {
 	
 	
 	private List<String> getResources(){
-		List<String> result=new ArrayList<>();
+		List<String> result=new ArrayList<String>();
 		String workspace=get(ReleaseMemoField.WORKSPACE);
 		String resourceFolder=get(ReleaseMemoField.RESOURCES_FOLDER);
 		boolean start=false;
@@ -229,7 +229,7 @@ public class ReleaseMemo {
 	}
 	
 	private List<String> getSources(){
-		List<String> result=new ArrayList<>();
+		List<String> result=new ArrayList<String>();
 		String workspace=get(ReleaseMemoField.WORKSPACE);
 		String sourceFolder=get(ReleaseMemoField.SOURCE_FOLDER);
 		boolean start=false;

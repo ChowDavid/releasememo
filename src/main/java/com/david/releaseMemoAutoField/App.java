@@ -17,7 +17,7 @@ import org.apache.commons.io.FileUtils;
 public class App
 {
     public static void main( String[] args ) throws IOException, ArchiveException {
-    	Map<String,Boolean> checkMap=new HashMap<>();
+    	Map<String,Boolean> checkMap=new HashMap<String,Boolean>();
     	
     	for (String s:ReleaseMemoField.KEYWORDS){
     		checkMap.put(s, false);
