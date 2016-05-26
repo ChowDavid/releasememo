@@ -7,6 +7,7 @@ JDK 1.6 or above
 java -jar releaseMemoAutoFieldXXX.jar <path to source file> [-Dskipsvn=true]
 if svn does not exists. please set skipsvn=true otherwise it will check the svn content form the workspace
 ## required field from source file
+```
 DEVELOPER=
 ISSUE_DATE=YYYY-MM-DD
 PROJECT_NAME=
@@ -33,6 +34,6 @@ com/xxx/yyy/hello.properties
 ...
 ...
 EOF
-
+```
 
 
