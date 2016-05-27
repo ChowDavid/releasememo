@@ -133,6 +133,7 @@ public class ReleaseMemo {
         FileOutputStream out = new FileOutputStream(targetFile.getAbsolutePath());
         wb.write(out);
         out.close();
+        wb.close();
 		
 	}
 
